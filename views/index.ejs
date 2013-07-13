@@ -24,23 +24,22 @@
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
   <body>
-    <div class='container'>
-        <div class='row'>
-            <div class='span12'>
                 <input class='access-token' value='8e6828155c2a1cd5eee3e58f81c07088' type='text' placeholder='access_token'>
-                <button class='fuel'>Fuel</button>
-                <button class='activities'>Activities</button>
-                <input class='activity' value='' type='text' placeholder='activity id'>
-                <button class='activity'>Activity</button>
-            </div>
-        </div>
-    </div>
-
+                <button class='btn-fuel'>Fuel</button>
+                <button class='btn-activities'>Activities</button>
+                
+                <br />
+                <div class='activities'></div>
+                <br />
+                <br />
+                <canvas id="chart" width="1200" height="600"></canvas>
+  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
     <script src='/js/underscore-min.js'></script>
     <script src='/js/handlebars-1.0.0-rc.4.js'></script>
     <script src='/js/moment.min.js'></script>
+    <script src='/js/Chart.js'></script>
     <script src='/js/web.js'></script>
   </body>
 </html>
