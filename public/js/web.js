@@ -77,21 +77,21 @@ function formatData(data, offset, max){
 				strokeColor : "rgba(220,220,220,1)",
 				pointColor : "rgba(220,220,220,1)",
 				pointStrokeColor : "#fff",
-				data : data.metrics[0].values.slice(offset, max)
+				data : data.metrics[0].values.slice(offset, offset+max)
 			},
 			{
 				fillColor : "rgba(151,187,205,0.5)",
 				strokeColor : "rgba(151,187,205,1)",
 				pointColor : "rgba(151,187,205,1)",
 				pointStrokeColor : "#fff",
-				data : data.metrics[1].values.slice(offset, max)
+				data : data.metrics[1].values.slice(offset, offset+max)
 			},
 			{
 				fillColor : "rgba(123,187,132,0.5)",
 				strokeColor : "rgba(123,187,132,1)",
 				pointColor : "rgba(123,187,132,1)",
 				pointStrokeColor : "#fff",
-				data : data.metrics[2].values.slice(offset, max)
+				data : data.metrics[2].values.slice(offset, offset+max)
 			}
 		]
 	}
@@ -108,7 +108,13 @@ function getLabels(count){
 	return list;
 }
 
-var options = {}
+var options = {
+	scaleOverride : true,
+	scaleSteps : 100,
+	scaleStepWidth : 1,
+	scaleStartValue : 0,
+	scaleFontSize : 10
+}
 
 function updateChart(){
 	new Chart(ctx).Line(formatData(activity, offset, max), options);
