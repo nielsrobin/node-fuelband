@@ -110,8 +110,8 @@ function getLabels(count){
 
 var options = {
 	scaleOverride : true,
-	scaleSteps : 100,
-	scaleStepWidth : 1,
+	scaleSteps : 15,
+	scaleStepWidth : 10,
 	scaleStartValue : 0,
 	scaleFontSize : 10
 }
