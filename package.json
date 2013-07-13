@@ -1,0 +1,11 @@
+{
+    "name": "node-fuelband"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "underscore": ""
+    , "express" : ""
+    , "ejs" : ""
+    , "ejs-locals" : ""
+  }
+}
