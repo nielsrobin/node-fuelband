@@ -1,14 +1,13 @@
-node-fuelband
-=============
+# node-fuelband
 
 Basic app for fuelband data.
 
-# Setup
+## Setup
 
 + npm install
 + node app.js
 
-# How do get your fuelband access_token
+## How do get your fuelband access_token
 
 + Go to https://developer.nike.com/
 + Log in with your nike+ account
@@ -16,7 +15,7 @@ Basic app for fuelband data.
 + Click Get My Access Token
 + Log in again.
 
-# Use
+## Use
 
 + copy paste your access_token in to the textbox and click activities
 + select a day and use 'next' and 'prev' to navigate the hours of the day.
